@@ -16,7 +16,7 @@
 			{formhelp note="Select a groupt to get its permissions data or select all to get all permission information (Custom content permissions not included)."}
 			{html_options options=$activePackages name=users_permissions selected=$smarty.request.users_permissions}
 		</div>
-		<div class="row submit">
+		<div class="buttonHolder row submit">
 			<input type="submit" name="dump" value="{tr}Dump Settings to YAML{/tr}" />
 		</div>
 		{/legend}
@@ -35,7 +35,7 @@
 			{formhelp note="Select a YAML bitweaver configuration file to upload. It will be automatically processed"}
 			<input type="file" name="upload" />
 		</div>
-		<div class="row submit">
+		<div class="buttonHolder row submit">
 			<input type="submit" name="submit_upload" value="{tr}Upload YAML File{/tr}" />
 		</div>
 		{/legend}
